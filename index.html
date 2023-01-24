@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Encripta 3DES</title>
+</head>
+
+<body>
+
+  <div class="instrucciones contenedor">
+    <h1>Encriptador y Desencriptador con algoritmo 3DES</h1>
+    <p>Encripta CUALQUIER tipo de arhivos con el algoritmo 3DES.
+    <ol>
+      <li>Sube tu archivo arrastrándolo o seleccionalo desde el explorador</li>
+      <li>Elige una contraseña bajo los requerimientos que se piden</li>
+      <li>Presiona el botón de encriptar</li>
+      <li>Si todo sale bien, se te mostrará una cadena de caracteres que es tu archivo encriptado y se habilitará el
+        botón para que descargues dicha cadena en un documento txt</li>
+    </ol>
+    </p>
+  </div>
+
+  <div class="botonesOpcionFlex contenedor">
+    <div>
+      <a href="index.html"><button class="active">Encriptar</button></a>
+    </div>
+
+    <div>
+      <a href="https://proyecto3desdesencriptar.netlify.app"><button class="inactive">Desencriptar</button></a>
+    </div>
+  </div>
+
+  <div class="workZone">
+    <div class="drag-area">
+      <h2>Arrastra y suelta tu archivo</h2>
+      <span>O</span>
+      <button class="btnPrincipal">Selecciona tu archivo</button>
+      <input type="file" id="input-file" hidden />
+    </div>
+  </div>
+
+
+  <script type="module" src="main.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
